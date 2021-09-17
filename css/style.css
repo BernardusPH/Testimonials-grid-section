@@ -1,0 +1,275 @@
+:root{
+    --Moderate-violet: hsl(263, 55%, 52%);
+    --Very-dark-grayish-blue: hsl(217, 19%, 35%);
+    --Very-dark-blackish-blue: hsl(219, 29%, 14%);
+    --White: hsl(0, 0%, 100%);
+
+
+    --Light-gray: hsl(0, 0%, 81%);
+    --Light-grayish-blue: hsl(210, 46%, 95%);
+    font-size: 13px;
+
+}
+
+
+
+@font-face{
+    font-family:BarlowSemiCondensed500 ;
+    src:url("../fonts/BarlowSemiCondensed500.ttf")
+}
+
+@font-face{
+    font-family:BarlowSemiCondensed600 ;
+    src:url("../fonts/BarlowSemiCondensed600.ttf")
+}
+
+*{
+    box-sizing: border-box;
+    padding:0;
+    margin:0;
+    font-weight: normal;
+}
+
+body{
+    min-height: 100vh;
+    margin:4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--Light-grayish-blue);
+    
+    
+}
+
+
+main{
+    
+    max-width: 100%;
+    width:1200px;
+    display: grid;
+    grid-template-columns:repeat(4, 1fr);    
+    grid-template-rows:50% 50%;
+    -moz-column-gap: 25px;
+         column-gap: 25px;
+    row-gap: 25px;
+    grid-template-areas:"daniel daniel jonathan kira" 
+                            "jeanette patrick patrick kira";
+}
+
+
+
+section{
+    max-width:100%;
+    border-radius: 10px;
+    padding:20px 40px 25px;
+}
+
+/* container for the profile pic, name and verification. 
+The colors and extra changes are made by each section*/
+.pic-name-container{
+    display:flex;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+        .profile-pic{
+            border-radius: 50%;
+            width:34px;
+           
+            
+        }
+
+        .name-verified{
+            padding-left: 15px;
+        }
+
+                h2{
+                    font-family: BarlowSemiCondensed500;
+                    font-size: 1.2rem;
+                }
+
+                h2 > span{
+                    font-family: BarlowSemiCondensed500;
+                    font-size: 1rem;
+                    opacity: 50%;
+                }
+
+p.first-paragraph{
+    font-family:BarlowSemiCondensed600;
+    font-size: 1.6rem;
+    
+}
+
+
+p.second-paragraph{
+    margin-top: 1.5rem;
+    font-family: BarlowSemiCondensed500;
+    opacity: 70%;
+    line-height: 1.5;
+}
+
+
+
+
+
+
+
+
+
+
+
+.daniel-clifford{
+    grid-area:daniel;
+    background: url("../images/bg-pattern-quotation.svg"), var(--Moderate-violet);
+    background-repeat: no-repeat;
+    background-position:right 100px top 0;
+   
+}
+
+        .daniel-clifford .profile-pic{
+            border:2px solid hsl(263, 74%, 64%);
+            
+        }
+        .daniel-clifford h2{
+            color:var(--Light-grayish-blue);
+        }
+        
+        .daniel-clifford .first-paragraph{
+            color: var(--Light-grayish-blue);
+        }
+        .daniel-clifford  .second-paragraph{
+            color: var(--Light-grayish-blue);
+        }
+
+
+
+
+
+
+
+
+
+
+
+.jonathan-walters{
+    grid-area:jonathan;
+    background-color: var(--Very-dark-grayish-blue);
+   
+}
+
+            .jonathan-walters .profile-pic{
+                border:1px solid var(--Light-gray);
+               
+            }
+            .jonathan-walters h2{
+                color:var(--White);
+            }
+            
+            .jonathan-walters .first-paragraph{
+                color: var(--White);
+            }
+            .jonathan-walters  .second-paragraph{
+                color: var(--White);
+            }
+
+
+
+
+
+
+
+
+.jeanette-harmon{
+    grid-area:jeanette;
+    background-color: var(--White);
+    box-shadow: 5px 10px 35px -25px black;
+   
+    
+}
+        
+                
+                .jeanette-harmon h2{
+                    color:var(--Very-dark-grayish-blue);
+                }
+                
+                .jeanette-harmon .first-paragraph{
+                    color: var(--Very-dark-grayish-blue);
+                    
+                    
+                }
+                .jeanette-harmon  .second-paragraph{
+                    color: var(--Very-dark-grayish-blue);
+                   
+                }
+
+
+
+
+
+
+
+
+
+.patrick-abrams{
+    grid-area:patrick;
+    background-color: var(--Very-dark-blackish-blue);
+}
+
+            .patrick-abrams .profile-pic{
+                border:2px solid var(--Moderate-violet);
+               
+            }
+            .patrick-abrams h2{
+                color:var(--White);
+            }
+          
+            .patrick-abrams .first-paragraph{
+                color: var(--White);
+            }
+            .patrick-abrams  .second-paragraph{
+                color: var(--White);
+            }
+
+
+
+
+
+
+
+
+
+.kira-whittle{
+    grid-area:kira;
+    background-color: var(--White);
+    box-shadow: 5px 10px 35px -25px black;
+}
+
+            
+            
+            .kira-whittle h2{
+                color:var(--Very-dark-grayish-blue);
+            }
+           
+            .kira-whittle .first-paragraph{
+                color: var(--Very-dark-grayish-blue);
+            }
+            .kira-whittle .second-paragraph{
+                color: var(--Very-dark-grayish-blue);
+                margin-top: 2rem;
+            }
+    
+                    
+
+footer{
+    position:absolute;
+    top:0;
+    left:50%;
+    transform: translateX(-50%);
+}
+
+
+
+
+ 
+.attribution { font-size: 13px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
